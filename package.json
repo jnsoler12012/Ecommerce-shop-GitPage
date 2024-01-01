@@ -1,7 +1,8 @@
 {
   "name": "ecommerce-shop",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Eccomerce shop page",
   "main": "index.js",
   "scripts": {
     "startServer": "node server.js",

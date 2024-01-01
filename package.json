@@ -1,14 +1,15 @@
 {
   "name": "ecommerce-shop",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Eccomerce shop page",
   "main": "index.js",
   "scripts": {
     "startServer": "node server.js",
     "start": "webpack-dev-server --host 0.0.0.0 --allowed-hosts all --devtool eval-source-map --mode development --open ",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d ."
   },
   "repository": {
     "type": "git",

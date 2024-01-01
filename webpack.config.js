@@ -1,5 +1,6 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: `${__dirname}/src/index.js`,
@@ -7,16 +8,19 @@ module.exports = {
         path: `${__dirname}/dist`,
         clean: true,
         //publicPath: '/dist/',
-        publicPath: '/dist/',
+        publicPath: '/',
         filename: 'bundle.js',
     },
-    historyApiFallback: {
-        rewrites: [{ from: /\//, to: '/404.html' }],
+    devServer: {
+        historyApiFallback: {
+            rewrites: [{ from: /\//, to: '/404.html' }],
+        },
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json']
     },
     devtool: process.argv.indexOf('-p') === -1 ? 'eval-source-map' : 'source-map',
+    plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
     module: {
         rules: [
             {

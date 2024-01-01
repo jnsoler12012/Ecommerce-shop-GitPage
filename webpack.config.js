@@ -8,7 +8,7 @@ module.exports = {
         path: `${__dirname}/dist`,
         clean: true,
         //publicPath: '/dist/',
-        publicPath: '/dist/',
+        publicPath: '/',
         filename: 'bundle.js',
     },
     devServer: {
@@ -20,6 +20,7 @@ module.exports = {
         extensions: ['.js', '.jsx', '.json']
     },
     devtool: process.argv.indexOf('-p') === -1 ? 'eval-source-map' : 'source-map',
+    plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
     module: {
         rules: [
             {
@@ -43,8 +44,9 @@ module.exports = {
                 ]
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.css$/i,
+                include: path.resolve(__dirname, 'src'),
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
         ],
     },

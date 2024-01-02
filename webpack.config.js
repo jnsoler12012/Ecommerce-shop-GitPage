@@ -11,6 +11,7 @@ module.exports = {
         //publicPath: '/dist/',
         publicPath: '/dist/',
         filename: 'bundle.js',
+        assetModuleFilename: 'Ecommerce-shop-GitPage/[hash][ext][query]'
     },
     devServer: {
         historyApiFallback: {

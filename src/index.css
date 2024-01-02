@@ -24,7 +24,9 @@
 
 .background-cart-svg {
   background-image: url('https://raw.githubusercontent.com/jnsoler12012/Ecommerce-shop-GitPage/84ab48b2e0fc167d48bad6cb669fcb9743dd124b/assets/img/cart.svg');
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40px;
 }
 
 .background-bg-hero-svg {

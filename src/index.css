@@ -28,12 +28,12 @@
 }
 
 .background-bg-hero-svg {
-  background-image: url(../assets/img/bg_hero.svg);
+  background-image: url("https://raw.githubusercontent.com/jnsoler12012/Ecommerce-shop-GitPage/9cb053e4748d998b7f6ff0ea43c94f355a19214a/assets/img/bg_hero.svg");
 
 }
 
 .background-cover {
-  background-image: url(../assets/img/cover.png);
+  background-image: url("https://raw.githubusercontent.com/jnsoler12012/Ecommerce-shop-GitPage/master/assets/img/cover.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 16%;

@@ -27,7 +27,6 @@ const CartProvider = ({ children }) => {
     }, [cart]);
 
     const addToCart = (product, id) => {
-        console.log(product)
         const newItem = { ...product, amount: 1 }
 
         const cartItem = cart.find((item) => {
@@ -76,8 +75,6 @@ const CartProvider = ({ children }) => {
         const item = cart.find((item) => item.id === id)
         addToCart(item, id)
     }
-
-    console.log(cart);
 
     return <CartContext.Provider value={{ cart, addToCart, removeFromCart, cleanCart, increaseAmount, decreaseAmount, itemAmount, total }}>
         {children}

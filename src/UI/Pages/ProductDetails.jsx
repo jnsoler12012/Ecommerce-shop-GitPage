@@ -20,10 +20,6 @@ export default function () {
 
     const { title, image, price, description } = product;
 
-    console.log(product);
-
-    console.log(id)
-
     return (
         <section className='pt-32 pb-12 lg:py-32 h-screen flex items-center'>
             <div className='container mx-auto'>

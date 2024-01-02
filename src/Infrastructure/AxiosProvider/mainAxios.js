@@ -1,6 +1,6 @@
 
 export default ({ url, method, payload, axios, setProducts }) => {
-    console.log(url, method, payload, axios)
+
     let response = {
         result: null,
         error: null
@@ -20,7 +20,6 @@ export default ({ url, method, payload, axios, setProducts }) => {
 
             response.result = petitionResponse.data
         } catch (error) {
-            console.log("errrororo", error)
             response.error = error
         } finally {
             setProducts((prevState) => ({

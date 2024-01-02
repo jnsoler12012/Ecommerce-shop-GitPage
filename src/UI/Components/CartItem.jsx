@@ -6,7 +6,6 @@ import InteractiveRouterLink from './InteractiveRouterLink';
 import { CartContext } from '../../Infrastructure/Contexts';
 
 export default function ({ item, key }) {
-    console.log(item);
     const { id, title, image, price, amount } = item;
     const { removeFromCart, increaseAmount, decreaseAmount } = useContext(CartContext)
 

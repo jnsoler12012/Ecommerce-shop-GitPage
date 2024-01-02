@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --host 0.0.0.0 --allowed-hosts all --devtool eval-source-map --mode development --open ",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d ."
+    "deploy": "gh-pages -d . -m 'final production'"
   },
   "repository": {
     "type": "git",

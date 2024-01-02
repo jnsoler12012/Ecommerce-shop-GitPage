@@ -38,6 +38,7 @@
   background-image: url("https://raw.githubusercontent.com/jnsoler12012/Ecommerce-shop-GitPage/master/assets/img/cover.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 16%;
+  width: 23vw;
   height: 100%;
+  max-width: 23vw;
 }

@@ -11,7 +11,6 @@ function App() {
 
   return (
     <AxiosContextProvider config={{ baseURL: "https://fakestoreapi.com" }}>
-
       <SidebarProvider>
         <CartProvider>
           <ProductProvider>
@@ -19,7 +18,6 @@ function App() {
           </ProductProvider>
         </CartProvider>
       </SidebarProvider>
-
     </AxiosContextProvider>
 
   )

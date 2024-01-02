@@ -6,5 +6,7 @@ import App from './Infrastructure/App';
 ReactDOM.createRoot(
   document.getElementById("root"),
 ).render(
-  <App />
+  <div className='noSelect'>
+    <App />
+  </div>
 );

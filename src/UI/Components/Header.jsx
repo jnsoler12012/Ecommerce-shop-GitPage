@@ -3,8 +3,6 @@ import { BsBag } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { SidebarContext, CartContext } from '../../Infrastructure/Contexts';
 import InteractiveRouterLink from './InteractiveRouterLink';
-//import Logo from 'dist/logo.svg'
-import { Logo } from '../assets/img'
 
 export default function () {
     const [isActive, setIsActive] = useState(false)
@@ -23,7 +21,7 @@ export default function () {
             <div className='container mx-auto flex items-center justify-between h-full'>
                 <InteractiveRouterLink as={Link} to={`/`} className=''>
                     <div>
-                        <img src={Logo} alt="" className='w-[40px]' />
+                        <div className='w-[40px] background-cart-svg' />
                     </div>
                 </InteractiveRouterLink>
                 <div

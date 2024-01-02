@@ -9,7 +9,7 @@ module.exports = {
         path: `${__dirname}/dist`,
         clean: true,
         //publicPath: '/dist/',
-        publicPath: '/dist/',
+        publicPath: '/',
         filename: 'bundle.js',
     },
     devServer: {
@@ -21,7 +21,7 @@ module.exports = {
         extensions: ['.js', '.jsx', '.json']
     },
     devtool: process.argv.indexOf('-p') === -1 ? 'eval-source-map' : 'source-map',
-    //plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
+    plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
     module: {
         rules: [
             {

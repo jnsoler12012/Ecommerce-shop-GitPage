@@ -23,8 +23,19 @@
 }
 
 .background-cart-svg {
-  background-image: url(../assets/img/cart.svg);
+  background-image: url('https://raw.githubusercontent.com/jnsoler12012/Ecommerce-shop-GitPage/84ab48b2e0fc167d48bad6cb669fcb9743dd124b/assets/img/cart.svg');
+
+}
+
+.background-bg-hero-svg {
+  background-image: url(../assets/img/bg_hero.svg);
+
+}
+
+.background-cover {
+  background-image: url(../assets/img/cover.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40px;
+  width: 16%;
+  height: 100%;
 }

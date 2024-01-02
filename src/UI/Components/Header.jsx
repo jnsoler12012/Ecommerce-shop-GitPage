@@ -3,6 +3,7 @@ import { BsBag } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { SidebarContext, CartContext } from '../../Infrastructure/Contexts';
 import InteractiveRouterLink from './InteractiveRouterLink';
+//import Logo from 'dist/logo.svg'
 import { Logo } from '../assets/img'
 
 export default function () {

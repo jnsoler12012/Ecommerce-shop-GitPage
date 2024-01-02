@@ -4,10 +4,6 @@ import { AxiosContextProvider } from './AxiosProvider'
 import { CartProvider, ProductProvider, SidebarProvider } from './Contexts'
 
 function App() {
-  console.log("--=INICIAMOS")
-  useEffect(() => {
-    console.log("--=CAMIOS??")
-  }, [])
 
   return (
     <AxiosContextProvider config={{ baseURL: "https://fakestoreapi.com" }}>

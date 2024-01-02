@@ -13,13 +13,6 @@ const ProductProvider = ({ children }) => {
     const axiosContext = useContext(AxiosContext)
 
     useEffect(() => {
-        console.log("[][][][][][] General state ", products)
-
-
-    }, [products])
-
-
-    useEffect(() => {
         const fetchProducts = async () => {
             const response = await mainAxios({ url: "/products", method: "GET", axios: axiosContext, setProducts: setProducts })
 

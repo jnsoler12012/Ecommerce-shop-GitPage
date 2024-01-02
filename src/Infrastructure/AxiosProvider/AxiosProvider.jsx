@@ -12,7 +12,6 @@ export const AxiosContextProvider = ({
     const instanceRef = useRef(axios.create(config));
 
     useEffect(() => {
-        console.log("()()()()peticion hecha")
         requestInterceptors.forEach((interceptor) => {
             instanceRef.current.interceptors.request.use(
                 interceptor

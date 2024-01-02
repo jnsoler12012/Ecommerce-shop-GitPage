@@ -10,7 +10,7 @@ export default function ErrorPage() {
                 Page Not Found
             </div>
             <button className="mt-5">
-                <a
+                <div
                     className="relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring"
                 >
                     <span
@@ -18,9 +18,12 @@ export default function ErrorPage() {
                     ></span>
 
                     <span className="relative block px-8 py-3 bg-[#1A2238] border border-current">
-                        <InteractiveRouterLink as={Link} to={"/"} visualText={"Go Home"} />
+                        <a >
+                            <InteractiveRouterLink as={Link} to={"/"} visualText={"Go Home"}/>
+                        </a>
+
                     </span>
-                </a>
+                </div>
             </button>
         </main>
     )

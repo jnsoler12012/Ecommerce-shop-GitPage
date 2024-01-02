@@ -2,13 +2,14 @@ const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
     entry: `${__dirname}/src/index.js`,
     output: {
         path: `${__dirname}/dist`,
         clean: true,
         //publicPath: '/dist/',
-        publicPath: '/dist/',
+        publicPath: '/',
         filename: 'bundle.js',
     },
     devServer: {
@@ -20,7 +21,7 @@ module.exports = {
         extensions: ['.js', '.jsx', '.json']
     },
     devtool: process.argv.indexOf('-p') === -1 ? 'eval-source-map' : 'source-map',
-    //plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
+    plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
     module: {
         rules: [
             {
@@ -47,6 +48,11 @@ module.exports = {
                 test: /\.css$/i,
                 include: path.resolve(__dirname, 'src'),
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
+            },
+
+            {
+                test: /\.(png|jp(e*)g|svg|gif)$/,
+                type: "asset/resource",
             },
         ],
     },
